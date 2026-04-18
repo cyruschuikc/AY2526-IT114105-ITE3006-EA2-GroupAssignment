@@ -4,23 +4,35 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=0.85"/>
     <meta name="author" content="[GitHub]cyruschuikc, [GitHub]VTC-stu250476749"/>
-    <meta name="description" content="KKCB Camping Club — Outdoor adventures, camping events, and community activities for nature lovers in Hong Kong."/>
-    <meta name="keywords" content="KKCB, camping club, outdoor, Hong Kong, adventures, events, nature"/>
-    <title>KKCB Camping Club</title>
+    <meta name="description" content="HK Camping Club — Outdoor adventures, camping events, and community activities for nature lovers in Hong Kong."/>
+    <meta name="keywords" content=" camping club, outdoor, Hong Kong, adventures, events, nature"/>
+    <title>HK Camping Club</title>
     <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
     <nav class="LHSnav" aria-label="Left sidebar navigation"></nav>
     <main class="content">
         <header class="siteheader">
-            <h1 id="sitetitle">KKCB Camping Club</h1>
+            <h1 id="sitetitle">Hong Kong Camping Club</h1>
             <div id="siteslogan">
-                KamiKiCyBe Camping Club — Explore, Connect, Enjoy Nature
+                --- Explore, Connect, Enjoy Nature
             </div>
             <nav class="guide" aria-label="Main site navigation">
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="news.html">News</a></li>
+                    <li>
+                        <details>
+                            <summary><a href="news.html">News</a></summary>
+                            <ul>
+                                <li><a href="news.html#news-apr05">Gear Swap Meet</a></li>
+                                <li><a href="news.html#news-apr10">Spring Camping Event</a></li>
+                                <li><a href="news.html#news-apr15">Photography Contest</a></li>
+                                <li><a href="news.html#news-apr18">Trail Cleanup Day</a></li>
+                                <li><a href="news.html#news-mar28">Club Partners with Local Conservation Groups</a></li>
+                                <li><a href="news.html#news-feb20">Food, Music, and Friendship at Clearwater Bay</a></li>
+                            </ul>
+                        </details>
+                    </li>
                     <li><a href="events.html">Events</a></li>
                     <li><a href="campingsite.html">Camping Site</a></li>
                     <li><a href="about.html">About Us</a></li>
@@ -28,16 +40,120 @@
                 </ul>
             </nav>
         </header>
-    <section class="welcome">
-        <h2 id="sect1-h1">Welcome to Our Site</h2>
-    </section>
+
+        <section class="welcome">
+            <h2 id="sect1-h1">Welcome to Our Site</h2>
+            <hr>
+            <p>
+                Hi, Visitor! Welcome to our club website — Hong Kong Camping Club. <br>
+                We are the premier free-lifestyle outdoor adventures group, hosting camping events <br>
+                and community activities for nature lovers in Hong Kong.
+            </p> 
+            <p>
+                    Our mission is to connect people who love the outdoors, share camping knowledge, 
+                    and build a vibrant community. <br> Join us for events, explore new sites, and 
+                    experience nature together!
+            </p>
+            <!--slider is used to display photos in rotation-->
+            <div class="slider">       
+              <div class="slider-images">
+                <img src="images/campsite.jpg" class="active"/>
+                <img src="images/campsite2.jpg" />
+                <img src="images/campsite3.jpg" />
+            </div>
+            <button class="prev">&larr;</button>
+            <button class="next">&rarr;</button>
+            </div>
+        </section>
+
+        <section class="news">
+            <h2 id="sect2-h1">Camping News</h2>
+            <table>
+                <caption>Latest Updates from Hong Kong Camping Club</caption>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Headline</th>
+                        <th>Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="news-apr05">
+                        <td>April 5, 2026</td>
+                        <td><a href="news.html#news-apr05">Gear Swap Meet</a></td>
+                        <td>Members exchanged camping gear and shared tips on sustainable outdoor equipment use.</td>
+                    </tr>
+                    <tr id="news-apr10">
+                        <td>April 10, 2026</td>
+                        <td><a href="news.html#news-apr10">Spring Camping Event Announced</a></td>
+                        <td>Join us at Sai Kung for a weekend of outdoor fun and community bonding.</td>
+                    </tr>
+                    <tr id="news-apr15">
+                        <td>April 15, 2026</td>
+                        <td><a href="news.html#news-apr15">Photography Contest</a></td>
+                        <td>Submit your best camping and nature shots — winners will be featured on our site.</td>
+                    </tr>
+                    <tr id="news-apr18">
+                        <td>April 18, 2026</td>
+                        <td><a href="news.html#news-apr18">Trail Cleanup Day</a></td>
+                        <td>Members gathered to clear litter and maintain hiking paths in Tai Tam Country Park.</td>
+                    </tr>
+                    <tr id="news-mar28">
+                        <td>March 28, 2026</td>
+                        <td><a href="news.html#news-mar28">Club Partners with Local Conservation Groups</a></td>
+                        <td>We’ve partnered with local groups to maintain and explore new trails in Hong Kong.</td>
+                    </tr>
+                    <tr id="news-feb20">
+                        <td>February 20, 2026</td>
+                        <td><a href="news.html#news-feb20">Food, Music, and Friendship at Clearwater Bay</a></td>
+                        <td>Members gathered at Clearwater Bay for a night of food, music, and friendship.</td>
+                    </tr>
+                    <tr>
+                        <td><a href="news.html">see more ...</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="about">
+    <h2 id="sect3-h1">About Us</h2>
+    <hr>
+    <p>
+        The Hong Kong Camping Club was founded to bring together
+        outdoor enthusiasts across Hong Kong. Our mission is to create a welcoming community where
+        people of all ages can explore nature, share camping knowledge, and build lasting friendships.
+    </p>
+    <p>
+        We organize regular events including camping trips, hiking excursions, eco‑friendly workshops,
+        and family gatherings. Each activity is designed to foster a spirit of adventure while promoting
+        sustainability and respect for the environment.
+    </p>
+    <p>
+        The club is maintained by dedicated volunteers and collaborators, including
+        <a href="https://github.com/cyruschuikc">Cyrus CHUI KA CHUN</a> and
+        <a href="https://github.com/VTC-stu250476749">Tang Hoi Fung</a>, who ensure our website and
+        community remain vibrant and accessible.
+    </p>
+    <details>
+        <summary>(Click here to learn more)</summary>
+        <p>
+            Since its founding, Hong Kong Camping Club has grown into a hub for individuals who value
+            outdoor living and cultural exchange. We believe camping is more than just an activity —
+            it is a lifestyle that blends adventure, creativity, and community spirit. Whether you are
+            a seasoned camper or a beginner, you’ll find opportunities to connect, learn, and enjoy
+            nature with us.
+        </p>
+    </details>
+</section>
+
     </main>
+
     <nav class="RHSnav" aria-label="Right sidebar navigation"></nav>
     <footer>
-        &copy; 2026 KKCB Camping Club | All rights reserved<br>
+        &copy; 2026 Hong Kong Camping Club | All rights reserved<br>
         Maintained by 
-        <a href="https://github.com/cyruschuikc">Cyrus CHUI KA CHUN</a> & 
+        <a href="https://github.com/cyruschuikc">Cyrus CHUI KA CHUN</a>,  
         <a href="https://github.com/VTC-stu250476749">Tang Hoi Fung</a>
     </footer>
+      <script src="main.js"></script>
 </body>
 </html>
