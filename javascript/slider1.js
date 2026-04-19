@@ -5,6 +5,9 @@ const nextButton = document.querySelector('.next');
 let index = 0;
 let interval;
 
+/*the images to be displayed will be played in rotation.
+the next image will be drawn from right to left 
+until they completely replace the previous.   */
 function showSlide(n) {
   index = (n + imgs.length) % imgs.length;
   slider.style.transform = `translateX(-${index * 100}%)`;

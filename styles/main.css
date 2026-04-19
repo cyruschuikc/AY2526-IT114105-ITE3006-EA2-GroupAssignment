@@ -117,9 +117,11 @@ body {
 .slider .prev { left: 10px; }
 .slider .next { right: 10px; }
 
-
-
-.welcome, .news, .about {
+.news table{
+  width:100%;
+  border-collapse:collapse;
+}
+.welcome, .news, .reason {
     font-size: 120%;
     text-align: center;
     background-color: rgba(240, 248, 255, 0.85);
