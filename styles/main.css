@@ -1,6 +1,6 @@
 body {
     margin: 0;
-/*    background: rgba(0, 0, 0, 0.5) url("../images/campsite.jpg") no-repeat center/cover;*/
+   background: rgba(0, 0, 0, 0.85) url("../images/campsite.jpg") no-repeat center/cover;
     min-height: 100vh;
 }
 
@@ -102,9 +102,10 @@ body {
   display: none;
 }
 
-.welcome {
+.welcome, .news, .about {
+    font-size: 120%;
     text-align: center;
-    background-color: rgba(240, 248, 255, 0.7);
+    background-color: rgba(240, 248, 255, 0.85);
     color: #000;
 }
 
