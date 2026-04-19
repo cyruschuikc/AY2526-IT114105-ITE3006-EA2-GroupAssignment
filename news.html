@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=0.8"/>
@@ -18,7 +16,7 @@
     <!-- Favicon -->
     <link rel="icon" href="images/favicon.ico" type="image/x-icon"/>
 
-    <link rel="stylesheet" href="styles/news.css">
+    <link rel="stylesheet" href="styles/events.css">
 </head>
 <body>
     <nav class="LHSnav" aria-label="Left sidebar navigation"></nav>
@@ -28,18 +26,6 @@
             <div id="siteslogan">
                 --- Explore, Connect, Enjoy Nature
             </div>
-                <section class="slider" aria-label="Photo slider">
-            <!--slider is used to display photos in rotation-->
-            <div class="slider-images">
-                <img src="images/campsite4.jpg" alt="Mountainside Campsite view 1" class="active"/>
-                <img src="images/campsite5.jpg" alt="Densely populated campsite"/>
-                <img src="images/campsite6.jpg" alt="Mountainside Campsite view 2"/>
-            </div>
-            <div class="slider-controls" aria-label="Image slider controls">
-                <button class="prev" aria-label="Previous image">&larr;</button>
-                <button class="next" aria-label="Next image">&rarr;</button>
-            </div>
-        </section>
             <nav class="guide" aria-label="Main site navigation">
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -72,77 +58,288 @@
                 </ul>
             </nav>
         </header>
-        <section class="news">
-            <h2 id="sect1-h1">HKCC News</h2>
-            <details id="news-apr05">
-                <summary>April 5, 2026 — Gear Swap Meet</summary>
-                <article>
-                    <h3>Members Gather for Sustainable Gear Exchange</h3>
-                    <p>
-                        The KKCB Camping Club hosted its first ever gear swap meet, drawing dozens of members eager to exchange tents, lanterns, and cooking sets. The event was not only about trading equipment but also about promoting sustainability. 
-                        “It’s great to see old gear find new life,” said longtime member Lee Ming. The meet sparked lively discussions on eco-friendly camping practices and reducing waste, reinforcing the club’s commitment to responsible outdoor living.
-                    </p>
-                </article>
-            </details>
-            <details id="news-apr10">
-                <summary>April 10, 2026 — Spring Camping Event Announced</summary>
-                <article>
-                    <h3>Annual Spring Adventure Returns to Sai Kung</h3>
-                    <p>
-                        KKCB Camping Club is excited to announce its annual Spring Camping Event at Sai Kung. Scheduled for two days, the event will feature guided hikes, campfire cooking, and team-building games. Families and solo adventurers alike are welcome. 
-                        Registration opened today, and organizers expect spots to fill quickly. “This is our flagship event — a chance to reconnect with nature and each other,” said organizer Tang Hoi Fung.
-                    </p>
-                </article>
-            </details>
-            <details id="news-apr15">
-                <summary>April 15, 2026 — Photography Contest Launch</summary>
-                <article>
-                    <h3>Capturing the Spirit of Camping</h3>
-                    <p>
-                        The club launched its first photography contest, inviting members to showcase the beauty of Hong Kong’s landscapes and camping life. Categories include “Best Landscape,” “Community Spirit,” and “Wildlife Moments.” Winning entries will be featured on the club’s website and social media. 
-                        Prizes include camping gear vouchers. “We want to celebrate the artistry of our members,” said branding lead Cyrus CHUI KA CHUN. Submissions close May 10.
-                    </p>
-                </article>
-            </details>
-            <details id="news-apr18">
-                <summary>April 18, 2026 — Trail Cleanup Day</summary>
-                <article>
-                    <h3>Volunteers Restore Tai Tam Country Park</h3>
-                    <p>
-                        Today, dozens of members joined forces to clear litter and restore hiking paths at Tai Tam Country Park. The cleanup improved the environment and strengthened community spirit. Volunteers shared stories, enjoyed refreshments, and pledged to continue protecting Hong Kong’s natural treasures. 
-                        “It’s about giving back to the trails we love,” said participant Mei Wong. The initiative will become a monthly tradition.
-                    </p>
-                </article>
-            </details>
-            <details id="news-mar28">
-                <summary>March 28, 2026 — New Hiking Trail Partnership</summary>
-                <article>
-                    <h3>Club Partners with Local Conservation Groups</h3>
-                    <p>
-                        KKCB Camping Club has partnered with local conservation groups to maintain and explore new hiking trails. This collaboration ensures safe, accessible paths while promoting environmental stewardship. Members will be invited to join monthly trail walks and maintenance sessions, reinforcing the club’s role in preserving Hong Kong’s natural heritage.
-                    </p>
-                </article>
-            </details>
-            <details id="news-feb20">
-                <summary>February 20, 2026 — Community BBQ Night</summary>
-                <article>
-                    <h3>Food, Music, and Friendship at Clearwater Bay</h3>
-                    <p>
-                        The club’s BBQ night was a feast of flavors and friendship. Members grilled seafood, shared homemade dishes, and enjoyed live music. The event strengthened bonds within the community and reminded everyone that camping culture thrives on togetherness. “It felt like family,” said attendee Jason Lau.
-                    </p>
-                </article>
-            </details>
-            <details id="news-jan25">
-                <summary>January 25, 2026 — Campfire Storytelling Night</summary>
-                <article>
-                    <h3>Stories and Folklore Warm Winter Night</h3>
-                    <p>
-                        On a chilly evening at Tai Mo Shan, members gathered around the fire to share personal camping tales and folklore. The warmth of the flames and richness of the stories created an unforgettable atmosphere. This tradition will continue as a seasonal highlight, blending culture and community in the outdoors.
-                    </p>
-                </article>
-            </details>
+        <section class="intro">
+            <h2 id="heading">🤔What is Camping is❓</h2>
+            <hr>
+            <p id="content">
+                Camping is an fantastic outdoor recreational activity where participants stay overnight in a sheleter. <br>
+                e.g. A tent, a recreational vehicle (RV), or either even under the night shinny sky-within a natural enviroment. <br>
+                It is a depature from urban life, focused on self-sufficiency, outdoor skills, and a direct connection with our nature.
+                <details>
+                    <summary><b><u>Types of Camping</u></b></summary>
+                    Your 'campEXP.' varies significantly depending on the Lv. of amenities and the method of travel:<br><br>
+                    <table border="1px" width="100%">
+                        <tr>
+                            <th width="20%">Type</th>
+                            <th width="50%">Desc.</th>
+                            <th width="20%">🔑Chaarteristic</th>
+                            <th width="10%">Beginner Recomand Lv.</th>
+                        </tr>
+                        <tr>
+                            <td>Tent Camp</td>
+                            <td>Classic; 😴Sleep in a portable fabric shelter at a designated campsite</td>
+                            <td>Focus on simplicity & nature</td>
+                            <td>🌟🌟🌟🌟</td>
+                        </tr>
+                        <tr>
+                            <td>Backpacking</td>
+                            <td>Carrying all gear (e.g. Tent, Food, Water, etc.) in a pack while hiking into remote wilderness.</td>
+                            <td>High physical demand & total isolation</td>
+                            <td>👾</td>
+                        </tr>
+                        <tr>
+                            <td>RV / Van Life</td>
+                            <td>Utilizing a motorhome / converted van equipped with beds & often kitchens / bathrooms.</td>
+                            <td>Mobility with home-like comforts</td>
+                            <td>⭐⭐⭐</td>
+                        </tr>
+                        <tr>
+                            <td>Glamping</td>
+                            <td>"Glamorous camping" involving pre-erected structures with luxury beds, power, and high-end decor</td>
+                            <td>Resort-style comfort in a wide setting</td>
+                            <td>🌟🌟🌟🌟🌟</td>
+                        </tr>
+                        <tr>
+                            <td>Dispersed Camping</td>
+                            <td>Camping on public lands outside of designated campgrounds</td>
+                            <td>No amenities (no toilets, water, or trash bins)</td>
+                            <td>✨✨</td>
+                        </tr>
+                        <tr>
+                            <td>Wild Camp</td>
+                            <td>Camping in natural, undeveloped ares (forests, riverbanks) without facilities</td>
+                            <td>Total freedom & raw nature</td>
+                            <td>💀☠️👻</td>
+                        </tr>
+                    </table>
+                </details>
+                <details>
+                    <summary><b><u>Camping Gear</u></b></summary>
+                    <details>
+                        <summary><b><u>Necessary</u></b></summary>
+                        <table border="1px" width="100%">
+                            <tr>
+                                <td style="color: red; background-color: yellow;"><b>Camping Bag</b></td>
+                                <td style="color: red; background-color: yellow;"><b>Personal clothing (stock depens on days of the camp during - 1)</b></td>
+                                <td style="color: red; background-color: yellow;"><b>Winter clothing</b></td>
+                                <td>Soft/Airy Pillow</td>
+                                <td style="color: red; background-color: yellow;"><b>Mat</b></td>
+                                <td style="color: red; background-color: yellow;"><b>Sleeping Bag</b></td>
+                                <td style="color: red; background-color: yellow;"><b>Toiletries</b></td>
+                                <td style="color: red; background-color: yellow;"><b>Cooking ingredients</b></td>
+                                <td style="color: red; background-color: yellow;"><b>Water bottle</b></td>
+                                <td style="color: red; background-color: yellow;"><b>tableware</b></td>
+                                <td style="color: red; background-color: yellow;"><b>Tent</b></td>
+                                <td>Sky Canopy</td>
+                                <td style="color: red; background-color: yellow;"><b>Camp nail</b></td>
+                            </tr>
+                        </table>
+                    </details>
+                    <details>
+                        <summary><b><u>Tools</u></b></summary>
+                        <table border="1px" width="100%">
+                            <tr>
+                                <td style="color: red; background-color: yellow;"><b>Flashlight</b></td>
+                                <td style="color: red; background-color: yellow;"><b>Multi-purpose folding knife</b></td>
+                                <td style="color: red; background-color: yellow;"><b>Backup Battery</b></td>
+                                <td style="color: red; background-color: yellow;"><b>Compass</b></td>
+                                <td style="color: red; background-color: yellow;"><b>Camping & Hiking Map</b></td>
+                                <td style="color: red; background-color: yellow;"><b>First aid kit</b></td>
+                                <td style="color: red; background-color: yellow;"><b>Camping Lanterns</b></td>
+                                <td style="color: red; background-color: yellow;"><b>Head/Waist Lights</b></td>
+                                <td>Rope rolls (1 part hemp + 1 part cotton)</td>
+                                <td style="color: red; background-color: yellow;"><b>Lightweight rubber mallet</b></td>
+                            </tr>
+                        </table>
+                        ※Note: First aid kit is use for save several vital products, and prepare with material shortage, accidentally separted, or either injuried. <br>
+                        First aid kit, even Your campEXP have so many, should also to prepare once while survival in a crisis.
+                        <a href="docs/first_aid_pack.docx" download>Download First Aid Packet Products Listing</a>
+                    </details>
+                    <details>
+                        <summary><b><u>Cooking Ingrredients</u></b></summary>
+                        <table border="1px" width="100%">
+                            <tr>
+                                <td>Cookware Set</td>
+                                <td>Camping Stoves(1/2 High Mounttain Air/Normal + 1 reserve)</td>
+                                <td>Fuel Tank</td>
+                                <td>Plastic cutting board</td>
+                                <td>Sanitary Ware</td>
+                            </tr>
+                        </table>
+                    </details>
+                    <details>
+                        <summary><b><u>Other Equipments</u></b></summary>
+                        <table border="1px" width="100%">
+                            <tr>
+                                <td>Plastic Pack</td>
+                                <td>Individual Medicament</td>
+                                <td>Charger</td>
+                                <td>whistle</td>
+                                <td>walkie-talkie</td>
+                            </tr>
+                        </table>
+                    </details>
+                </details>
+            </p>
         </section>
-    </main>
+        <section class="videos">
+            <h2>Guiding Videos</h2>
+            <iframe width="400" height="400" 
+          src="https://www.youtube.com/embed/jBDido6uX9k" 
+          title="YouTube video player" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+        </iframe>
+        <iframe width="400" height="400" 
+          src="https://www.youtube.com/embed/GrCrmBz6fBA" 
+          title="YouTube video player" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+        </iframe>
+        <iframe width="400" height="400" 
+          src="https://www.youtube.com/embed/VIrHPX9IX0M" 
+          title="YouTube video player" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+        </iframe>
+        </section>
+        <section class="events">
+  <h2>HK Camping Club Events 2026</h2>
+  <table>
+    <caption>Club Events and Activities (Jan–Apr 2026)</caption>
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Event</th>
+        <th>Details</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>5 Jan 2026</td>
+        <td>Campfire Storytelling Night</td>
+        <td>
+          <details>
+            <summary>Read more</summary>
+            <article>
+              Members gathered at Tai Tam campsite for an evening of stories, folklore, and music under the stars.
+            </article>
+          </details>
+        </td>
+      </tr>
+      <tr>
+        <td>16 Feb 2026</td>
+        <td>Community BBQ Night</td>
+        <td>
+          <details>
+            <summary>Read more</summary>
+            <article>
+              A family-friendly BBQ at Shek O beach, featuring local dishes and games for children.
+            </article>
+          </details>
+        </td>
+      </tr>
+      <tr>
+        <td>9 Mar 2026</td>
+        <td>New Hiking Trail Partnership</td>
+        <td>
+          <details>
+            <summary>Read more</summary>
+            <article>
+              Collaboration with local conservation groups to open a new eco-friendly trail near Sai Kung.
+            </article>
+          </details>
+        </td>
+      </tr>
+      <tr>
+        <td>2 Apr 2026</td>
+        <td>Spring Camping Event</td>
+        <td>
+          <details>
+            <summary>Read more</summary>
+            <article>
+              A two-day camping trip at Pui O with workshops on sustainable camping practices.
+            </article>
+          </details>
+        </td>
+      </tr>
+      <tr>
+        <td>12 Apr 2026</td>
+        <td>Photography Contest Launch</td>
+        <td>
+          <details>
+            <summary>Read more</summary>
+            <article>
+              Members submitted nature and camping photos; winners to be announced in May.
+            </article>
+          </details>
+        </td>
+      </tr>
+      <tr>
+        <td>18 Apr 2026</td>
+        <td>Trail Cleanup Day</td>
+        <td>
+          <details>
+            <summary>Read more</summary>
+            <article>
+              Volunteers joined forces to clean up litter along Dragon’s Back trail, promoting eco-awareness.
+            </article>
+          </details>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<section class="upcoming">
+  <h2>Upcoming Events (May–Jun 2026)</h2>
+  <ul>
+    <li>
+      <details>
+        <summary>3 May 2026 – Night Sky Observation</summary>
+        <article>
+          Stargazing at Clearwater Bay with telescopes provided by the Astronomy Society.
+        </article>
+      </details>
+    </li>
+    <li>
+      <details>
+        <summary>17 May 2026 – Eco-Friendly Workshop</summary>
+        <article>
+          Hands-on session teaching sustainable camping gear repair and DIY eco hacks.
+        </article>
+      </details>
+    </li>
+    <li>
+      <details>
+        <summary>31 May 2026 – Monthly Newsletter Release</summary>
+        <article>
+          Digital newsletter featuring member stories, contest updates, and upcoming summer events.
+        </article>
+      </details>
+    </li>
+    <li>
+      <details>
+        <summary>14 Jun 2026 – Summer Family Picnic</summary>
+        <article>
+          A relaxed gathering at Victoria Peak Park with games, food, and community bonding.
+        </article>
+      </details>
+    </li>
+    <li>
+      <details>
+        <summary>28 Jun 2026 – Kayaking Adventure</summary>
+        <article>
+          Coastal kayaking trip around Sai Kung islands, suitable for beginners and experienced paddlers.
+        </article>
+      </details>
+    </li>
+  </ul>
+</section>
+
     <nav class="RHSnav" aria-label="Right sidebar navigation"></nav>
     <footer>
         &copy; 2026 KKCB Camping Club | All rights reserved<br>
@@ -151,5 +348,4 @@
         <a href="https://github.com/VTC-stu250476749">Tang Hoi Fung</a>
     </footer>
 </body>
-<script src="javascript/slider2.js"></script>
 </html>
