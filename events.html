@@ -1,54 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=0.8" />
-  <meta name="author" content="[GitHub]cyruschuikc, [GitHub]VTC-stu250476749" />
+  <!--Set up the charter set using 'UTF-8' charters repository-->
+  <meta charset="UTF-8" />  
+  <!--
+  Set up the viewport focusing to set up the website scale for the zoom-in and zoom-out;
+  The width and the height are initialized as the width and the height of the device,
+  and the initial scale are preseted to 1 as defult.
+   -->
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1" />
+  <!--website author, desc., keywords, and title-->
+  <meta name="author" content="CHUI KA CHUN, TANG HOI FUNG" />
   <meta name="description" content="HK Camping Club — Outdoor adventures, camping events, and community activities for nature lovers in Hong Kong." />
   <meta name="keywords" content="camping club, outdoor, Hong Kong, adventures, events, nature" />
   <title>HK Camping Club</title>
-
-  <!-- Open Graph for SEO & Social Sharing -->
-  <meta property="og:title" content="Hong Kong Camping Club" />
-  <meta property="og:description" content="Outdoor adventures, camping events, and community activities for nature lovers in Hong Kong." />
-  <meta property="og:image" content="images/campsite.jpg" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://yourdomain.com" />
-
-  <!-- Favicon -->
-  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
-
+  <!--stylesheets linking-->
   <link rel="stylesheet" href="styles/events.css">
 </head>
-
 <body>
-  <nav class="LHSnav" aria-label="Left sidebar navigation"></nav>
+  <nav class="LHSnav" aria-label="Left sidebar navigation"></nav> <!--setup left hand side backdrop canva-->
+  <!--page contents-->
   <main class="content">
     <header class="siteheader">
+      <img src="images/logo.png" alt="Hong Kong Cmaping Club" 
+      width="12%" height="10%" onclick="window.location.reload()" 
+      title="Hong Kong Camping Club" style="background-color: rgba(240, 248, 255, 0.5);">
       <h1 id="sitetitle">Hong Kong Camping Club</h1>
-      <div id="siteslogan">
-        --- Explore, Connect, Enjoy Nature
-      </div>
+      <div id="siteslogan">Explore, Connect, Enjoy Nature</div>
+      <!--Website menu guide-->
       <nav class="guide" aria-label="Main site navigation">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="news.html">News</a></li>
+          <li><a href="index.html" style="color: aliceblue;">Home</a></li>
+          <li><a href="news.html" style="color: aliceblue;">News</a></li>
           <li>
-            <details>
-              <summary>Events</summary>
+            <details class="dropdown-menu" style="color: aliceblue;">
+              <summary id="dropdown-menu-tag" style="color: aliceblue;"><a href="events.html" style="color: aliceblue;">Events</a></summary>
               <ul>
-                <li><a href="events.html">Triva for Travel &amp; Our Events</a></li>
-                <li><a href="registration.html">Join Event</a></li>
+                <li><a href="events.html" style="color: aliceblue;">Triva for Travel &amp; Our Events</a></li>
+                <li><a href="registration.html" style="color: aliceblue;">Join Event</a></li>
               </ul>
             </details>
           </li>
-          <li><a href="campsite.html">Camping Site</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="campsite.html" style="color: aliceblue;">Camping Site</a></li>
+          <li><a href="about.html" style="color: aliceblue;">About Us</a></li>
+          <li><a href="contact.html" style="color: aliceblue;">Contact Us</a></li>
         </ul>
       </nav>
     </header>
+    <!--slider is used to display photos in rotation-->
+    <section class="slider" aria-label="Photo slider">
+      <div class="slider-images">
+        <img src="images/campsite.jpg" alt="Campsite view at sunset" class="active" />
+        <img src="images/campsite2.jpg" alt="Campfire gathering at night" />
+        <img src="images/campsite3.jpg" alt="Morning view of tents in forest" />
+        <img src="images/campsite4.jpg" alt="Mountainside Campsite view 1" />
+        <img src="images/campsite5.jpg" alt="Densely populated campsite" />
+        <img src="images/campsite6.jpg" alt="Mountainside Campsite view 2" />
+      </div>
+      <div class="slider-controls" aria-label="Image slider controls">
+        <button class="prev" aria-label="Previous image">&larr;</button>
+        <button class="next" aria-label="Next image">&rarr;</button>
+      </div>
+    </section>
     <section class="intro">
       <h2 id="heading">🤔What is Camping is❓</h2>
       <hr>
@@ -105,24 +118,26 @@
         </table>
       </details>
       <details>
-        <summary><b><u>Camping Gear</u></b></summary>
-        <details>
-          <summary><b><u>Necessary</u></b></summary>
-          <table border="1px" width="100%">
+        <summary><b><u>Necessary Camping Gear</u></b></summary>
+        <table border="1px" width="100%">
             <tr>
-              <td style="color: red; background-color: yellow;"><b>Camping Bag</b></td>
-              <td style="color: red; background-color: yellow;"><b>Personal clothing (stock depens on days of the camp during - 1)</b></td>
-              <td style="color: red; background-color: yellow;"><b>Winter clothing</b></td>
+              <td>Camping Bag</td>
+              <td>Personal clothing (stock depens on days of the camp during - 1)</td>
+              <td>Winter clothing</td>
               <td>Soft/Airy Pillow</td>
-              <td style="color: red; background-color: yellow;"><b>Mat</b></td>
-              <td style="color: red; background-color: yellow;"><b>Sleeping Bag</b></td>
-              <td style="color: red; background-color: yellow;"><b>Toiletries</b></td>
-              <td style="color: red; background-color: yellow;"><b>Cooking ingredients</b></td>
-              <td style="color: red; background-color: yellow;"><b>Water bottle</b></td>
-              <td style="color: red; background-color: yellow;"><b>tableware</b></td>
-              <td style="color: red; background-color: yellow;"><b>Tent</b></td>
+              <td>Mat</td>
+            </tr>
+            <tr>
+              <td>Sleeping Bag</td>
+              <td>Toiletries</td>
+              <td>Cooking ingredients</td>
+              <td>Water bottle</td>
+              <td>tableware</td>
+            </tr>
+            <tr>
+              <td>Tent</td>
               <td>Sky Canopy</td>
-              <td style="color: red; background-color: yellow;"><b>Camp nail</b></td>
+              <td>Camp nail</td>
             </tr>
           </table>
         </details>
@@ -130,16 +145,18 @@
           <summary><b><u>Tools</u></b></summary>
           <table border="1px" width="100%">
             <tr>
-              <td style="color: red; background-color: yellow;"><b>Flashlight</b></td>
-              <td style="color: red; background-color: yellow;"><b>Multi-purpose folding knife</b></td>
-              <td style="color: red; background-color: yellow;"><b>Backup Battery</b></td>
-              <td style="color: red; background-color: yellow;"><b>Compass</b></td>
-              <td style="color: red; background-color: yellow;"><b>Camping &amp; Hiking Map</b></td>
-              <td style="color: red; background-color: yellow;"><b>First aid kit</b></td>
-              <td style="color: red; background-color: yellow;"><b>Camping Lanterns</b></td>
-              <td style="color: red; background-color: yellow;"><b>Head/Waist Lights</b></td>
+              <td>Flashlight</td>
+              <td>Multi-purpose folding knife</td>
+              <td>Backup Battery</td>
+              <td>Compass</td>
+              <td>Camping &amp; Hiking Map</td>
+            </tr>
+            <tr>
+              <td>First aid kit</td>
+              <td>Camping Lanterns</td>
+              <td>Head/Waist Lights</td>
               <td>Rope rolls (1 part hemp + 1 part cotton)</td>
-              <td style="color: red; background-color: yellow;"><b>Lightweight rubber mallet</b></td>
+              <td>Lightweight rubber mallet</td>
             </tr>
           </table>
           ※Note: First aid kit is use for save several vital products, and prepare with material shortage, accidentally separted, or either injuried. <br>
@@ -239,7 +256,6 @@
         </tbody>
       </table>
     </section>
-
     <section class="upcoming">
       <h2>Upcoming Events (May–Jun 2026)</h2>
       <table>
@@ -286,9 +302,12 @@
               Coastal kayaking trip around Sai Kung islands, suitable for beginners and experienced paddlers.
             </td>
           </tr>
-      
         </tbody>
       </table>
+      <div style="font-size: larger;">
+        <hr>
+        Interest to join our events? <a href="registration.html">Click here</a> to register now‼️
+      </div>
     </section>
 
     <nav class="RHSnav" aria-label="Right sidebar navigation"></nav>
@@ -300,5 +319,5 @@
     </footer>
   </main>
 </body>
-
+<script src="javascript/dropdown.js"></script>
 </html>
