@@ -1,40 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <!--Set up the charter set using 'UTF-8' charters repository-->
-  <meta charset="UTF-8" />  
-  <!--
-  Set up the viewport focusing to set up the website scale for the zoom-in and zoom-out;
-  The width and the height are initialized as the width and the height of the device,
-  and the initial scale are preseted to 1 as defult.
-   -->
-  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1" />
-  <!--website author, desc., keywords, and title-->
-  <meta name="author" content="CHUI KA CHUN, TANG HOI FUNG" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=0.8" />
+  <meta name="author" content="[GitHub]cyruschuikc, [GitHub]VTC-stu250476749" />
   <meta name="description" content="HK Camping Club — Outdoor adventures, camping events, and community activities for nature lovers in Hong Kong." />
   <meta name="keywords" content="camping club, outdoor, Hong Kong, adventures, events, nature" />
   <title>HK Camping Club</title>
-  <!--stylesheets linking-->
+
+  <!-- Open Graph for SEO & Social Sharing -->
+  <meta property="og:title" content="Hong Kong Camping Club" />
+  <meta property="og:description" content="Outdoor adventures, camping events, and community activities for nature lovers in Hong Kong." />
+  <meta property="og:image" content="images/campsite.jpg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://yourdomain.com" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+
   <link rel="stylesheet" href="styles/main.css">
 </head>
+
 <body>
-  <nav class="LHSnav" aria-label="Left sidebar navigation"></nav> <!--setup left hand side backdrop canva-->
-  <!--page contents-->
+  <nav class="LHSnav" aria-label="Left sidebar navigation"></nav>
   <main class="content">
     <header class="siteheader">
-      <img src="images/logo.png" alt="Hong Kong Cmaping Club" 
-      width="12%" height="10%" onclick="window.location.reload()" 
-      title="Hong Kong Camping Club">
       <h1 id="sitetitle">Hong Kong Camping Club</h1>
-      <div id="siteslogan">Explore, Connect, Enjoy Nature</div>
-      <!--Website menu guide-->
+      <div id="siteslogan">
+        --- Explore, Connect, Enjoy Nature
+      </div>
       <nav class="guide" aria-label="Main site navigation">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="news.html">News</a></li>
           <li>
-            <details class="dropdown-menu">
-              <summary id="dropdown-menu-tag"><a href="events.html">Events</a></summary>
+            <details>
+              <summary>Events</summary>
               <ul>
                 <li><a href="events.html">Triva for Travel &amp; Our Events</a></li>
                 <li><a href="registration.html">Join Event</a></li>
@@ -47,8 +49,9 @@
         </ul>
       </nav>
     </header>
-    <!--slider is used to display photos in rotation-->
+
     <section class="slider" aria-label="Photo slider">
+      <!--slider is used to display photos in rotation-->
       <div class="slider-images">
         <img src="images/campsite.jpg" alt="Campsite view at sunset" class="active" />
         <img src="images/campsite2.jpg" alt="Campfire gathering at night" />
@@ -62,13 +65,14 @@
         <button class="next" aria-label="Next image">&rarr;</button>
       </div>
     </section>
-    <!--welcome section-->
+
     <section class="welcome">
       <h2 id="sect1-h1">Welcome to Our Site</h2>
       <hr>
-      <p>Welcome to our club website!! <br> 
-        We are the premier free-lifestyle outdoor adventures group, hosting camping events and
-         community activities for nature lovers in Hong Kong.
+      <p>
+        Hi, Visitor! Welcome to our club website — Hong Kong Camping Club. <br>
+        We are the premier free-lifestyle outdoor adventures group, hosting camping events <br>
+        and community activities for nature lovers in Hong Kong.
       </p>
       <p>
         Our mission is to connect people who love the outdoors, share camping knowledge,
@@ -76,17 +80,16 @@
         experience nature together!
       </p>
     </section>
-    <!--news-->
+
     <section class="news">
       <h2 id="sect2-h1">Camping News</h2>
-      <hr>
       <caption>Club News and Updates <br><small>Last updated: 18 April 2026 (HKT+8:00) 15:30</small></caption>
-      <table border="1px">
+      <table>
         <thead>
           <tr>
-            <th width="15%">Date</th>
-            <th width="30%">Headline</th>
-            <th width="55%">Details</th>
+            <th>Date</th>
+            <th>Headline</th>
+            <th>Details</th>
           </tr>
         </thead>
         <tbody>
@@ -126,6 +129,7 @@
         </tbody>
       </table>
     </section>
+
     <section class="reason">
       <h2 id="sect3-h1">Why join HK Camping Club</h2>
       <hr>
@@ -153,15 +157,15 @@
       </ul>
     </section>
   </main>
-  <nav class="RHSnav" aria-label="Right sidebar navigation"></nav> <!--setup right hand side backdrop canva-->
+
+  <nav class="RHSnav" aria-label="Right sidebar navigation"></nav>
   <footer>
     &copy; 2026 Hong Kong Camping Club | All rights reserved<br>
     Maintained by
     <a href="https://github.com/cyruschuikc">Cyrus CHUI KA CHUN</a>,
     <a href="https://github.com/VTC-stu250476749">Tang Hoi Fung</a>
   </footer>
+
   <!-- Defer script for performance -->
   <script src="javascript/slider1.js" defer></script>
-  <script src="javascript/dropdown.js"></script>
-</body>
-</html>
+</body></html>
